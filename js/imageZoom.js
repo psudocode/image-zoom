@@ -1,7 +1,7 @@
-angular.module('imageZoomApp',[]);
+angular.module('imageZoom',[]);
 
 angular
-  .module('imageZoomApp')
+  .module('imageZoom')
   .directive('zoom', function(){
     function link(scope, element, attrs){
       var $ = angular.element;
@@ -109,28 +109,28 @@ angular
     };
   });
 
-angular
-  .module('imageZoomApp')
-  .controller('ImageZoomController', ['$sce', function($sce){
-    this.zoomLvl = 4;
+// angular
+//   .module('imageZoomApp')
+//   .controller('ImageZoomController', ['$sce', function($sce){
+//     this.zoomLvl = 4;
 
-    this.images = [{
-      name: "Duck.jpg",
-      url: './img/duck.jpg'
-    },{
-      name: "Moon.jpg",
-      url: "./img/moon.jpg"
-    }];
+//     this.images = [{
+//       name: "Duck.jpg",
+//       url: './img/duck.jpg'
+//     },{
+//       name: "Moon.jpg",
+//       url: "./img/moon.jpg"
+//     }];
 
-    this.addImage = function(){
-      this.url = $sce.trustAsResourceUrl(this.url);
+//     this.addImage = function(){
+//       this.url = $sce.trustAsResourceUrl(this.url);
       
-      this.images.push({
-        name: this.name,
-        url: this.url
-      });
+//       this.images.push({
+//         name: this.name,
+//         url: this.url
+//       });
 
-      this.name = '';
-      this.url = '';
-    }
-  }]);
+//       this.name = '';
+//       this.url = '';
+//     }
+//   }]);

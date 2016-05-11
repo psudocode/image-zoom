@@ -1,0 +1,23 @@
+{
+  "name": "image-zoom",
+  "homepage": "https://github.com/psudocode/image-zoom",
+  "authors": [
+    "Ahmad Awdiyanto <dhidyawdiyan@gmail.com>"
+  ],
+  "description": "Simple Angular Image Zoom",
+  "main": ["./js/imageZoom.js", "./css/imageZoom.css"],
+  "keywords": [
+    "imageZoom",
+    "image",
+    "zoom",
+    "angular"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
